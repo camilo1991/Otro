@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing</title>
+        <style type="text/css">
+            @charset "utf-8";
+
+            @font-face {
+                font-family: "Bold";
+                src: url("fonts/CamphorPro-Bold.otf") format("opentype");
+            }
+            @font-face {
+                font-family: "Medium";
+                src: url("fonts/CamphorPro-Medium.otf") format("opentype");
+            }
+            @font-face {
+                font-family: "Regular";
+                src: url("fonts/CamphorPro-Regular.otf") format("opentype");
+            }
+
+            #xiaomi {
+                font-family: "Regular", sans-serif;
+                line-height: 1.3;
+                margin: 0 auto;
+                max-width: 1400px;
+                padding-bottom: 100%;
+            }
+            #xiaomi h1 {
+    font-family: "Bold", sans-serif;
+    text-align: center;
+    font-size: 19px;
+    padding: 7% 10% 0;
+}
+      
+            #xiaomi h2 {
+                font-family: "Medium", sans-serif;
+                text-align: center;
+                padding: 1% 10% 0;
+                font-size: 19px;
+            }
+            
+            #xiaomi .h2_w {
+    font-family: "Medium", sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 5% 8% 0;
+    font-size: 19px;
+}
+            #xiaomi p {
+                font-family: "Medium", sans-serif;
+                font-size: 11px;
+                text-align: center;
+                padding: 0% 3%;
+            }
+            #xiaomi .p_w {
+    font-family: "Medium", sans-serif;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    padding: 0% 5%;
+}
+           
+            #xiaomi .row_img_1 {
+    background-image: url(img/body/001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0%;
+    height: 396px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#xiaomi .row_img_2 {
+    background-image: url(img/body/003.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#xiaomi .row_img_3 {
+    background-image: url(img/body/004.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}   
+#xiaomi .row_img_4 {
+    background-image: url(img/body/0005.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 528px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#xiaomi .row_img_5 {
+    background-image: url(img/body/005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 424px;
+    max-width: 100%;
+    margin: 0 auto;
+}    
+#xiaomi .row_img_8 {
+    background-image: url(img/body/_011.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 406px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+      
+
+          
+            #xiaomi .row_img_7 {
+                background-image: url(img/body/009.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 900px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+
+            #xiaomi .logo {
+                max-width: 50% !important;
+                border-radius: 0 !important;
+            }
+
+            #xiaomi img {
+                margin: 0 auto;
+                display: block;
+                max-width: 100%;
+            }
+            .cards {
+                margin: 0 auto;
+                max-width: 100%;
+                display: grid;
+                grid-gap: 1rem;
+            }
+
+            .names {
+                width: 63% !important;
+            }
+
+            /*Inicio Botones*/
+            .boton_audifarma {
+                text-decoration: none;
+                padding: 10px;
+                font-weight: 200;
+                font-size: 20px;
+                color: #fff;
+                background-color: #000;
+                border-color: #000;
+                border-radius: 16px;
+                margin-top: 7%;
+            }
+            .boton_audifarma:hover {
+                color: #000;
+                background-color: #fff;
+                border-color: #000;
+            }
+
+            #xiaomi .logo-mi {
+                max-width: 9% !important;
+                width: 100px;
+            }
+            .card {
+                min-height: 190px;
+                padding: 1rem;
+                height: 4rem;
+            }
+
+            .div_h {
+                height: 37px;
+            }
+
+            /*Fin Botones*/
+
+            @media only screen and (max-width: 500px) {
+                .card {
+                    min-height: 145px;
+                    padding: 1rem;
+                    height: 4rem;
+                }
+            }
+
+            /* Screen larger than 600px? 2 column */
+            @media (min-width: 600px) {
+                .cards {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .card {
+                    min-height: 145px;
+                    padding: 1rem;
+                    height: 4rem;
+                }
+            }
+
+            /* Screen larger than 900px? 3 columns */
+            @media (min-width: 900px) {
+                .cards {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .card {
+                    min-height: 290px;
+                    padding: 1rem;
+                    height: 4rem;
+                }
+
+                #xiaomi {
+                    font-family: "Regular", sans-serif;
+                    line-height: 1.3;
+                    margin: 0 auto;
+                    max-width: 1400px;
+                    padding-bottom: 2%;
+                }
+                #xiaomi h1 {
+    font-family: "Bold", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding: 7% 10% 0;
+}
+#xiaomi h2 {
+    font-family: "Medium", sans-serif;
+    text-align: center;
+    padding: 1% 10% 0;
+    font-size: 35px;
+}
+#xiaomi .h2_w {
+                font-family: "Medium", sans-serif;
+                color: #fff;
+                text-align: center;
+                padding: 1% 10% 0;
+                font-size: 35px;
+            }
+#xiaomi p {
+                font-family: "Medium", sans-serif;
+                font-size: 20px;
+                text-align: center;
+                padding: 0% 10%;
+            }
+            #xiaomi .p_w {
+                font-family: "Medium", sans-serif;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                padding: 0% 10%;
+            }
+                 #xiaomi .row_img_1 {
+                background-image: url(img/body/001.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 700px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            #xiaomi .row_img_2 {
+                background-image: url(img/body/003.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 700px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            #xiaomi .row_img_3 {
+                background-image: url(img/body/004.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 700px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            #xiaomi .row_img_4 {
+                background-image: url(img/body/0005.JPG);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 900px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            #xiaomi .row_img_5 {
+                background-image: url(img/body/005.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 900px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            #xiaomi .row_img_6 {
+                background-image: url(img/body/008.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 900px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            }
+
+            .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+            }
+            .embed-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin-top: 3%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="xiaomi">
+            <div>
+                <h1>Descubre la Serie Mi TV P1</h1>
+            </div>
+            <div class="banner">
+                <img src="img/banner_2.jpg" alt="Banner principal" />
+            </div>
+            <div class="embed-container">
+                <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;" preload="auto" id="miVideo">
+                    <source src="img/body/Video.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div style="margin-top: -31px;" class="row_img_1">
+                <h2>Diseño sin biseles para una experiencia de visualización única</h2>
+                <p>Sin marcos en tres lados, este diseño innovador ofrece una relación pantalla-cuerpo superior y ángulos de visión de 178°, lo que proporciona una experiencia de visualización más envolvente y agradable.</p>
+            </div>
+            <div>
+                <h2>Experimenta 4K Ultra HD en todo su esplendor</h2>
+                <p>La resolución 4K UHD ofrece imágenes realistas con más detalle y mayor profundidad</p>
+                <img src="img/body/002.jpg" alt="" />
+            </div>
+            <div style="margin-top: -31px;" class="row_img_2">
+                <h2 class="h2_w">Compatible con Dolby Vision® y HDR10+ para percibir más detalles tanto con luz como en la oscuridad</h2>
+                <p class="p_w">
+                    Un rango dinámico más alto proporciona luces más brillantes y sombras más oscuras, lo que mejora la nitidez, el contraste y el color de las imágenes, mientras que los niveles de detalle realistas te permiten ver más que
+                    nunca.
+                </p>
+            </div>
+            <div style="margin-top: -31px;" class="row_img_3">
+                <h2 class="h2_w">Gama de colores amplia para obtener colores intensos y vivos</h2>
+                <p class="p_w">
+                    Una gama de colores amplia que ofrece hasta un 94 % de cobertura de DCI-P3 combinada con una pantalla de 1070 millones de colores ofrece una calidad de imagen asombrosa y realista con colores vibrantes y detalles vivos.
+                </p>
+                <strong><p class="p_w">94 % de la gama de colores DCI-P3 | 1070 millones de colores</p></strong>
+            </div>
+            <div style="margin-top: -31px;" class="row_img_4">
+                <h2 class="h2_w">Suavizado de movimiento MEMC para una mayor fluidez sin trepidación</h2>
+                <p class="p_w">
+                    La tecnología MEMC puede intercalar automáticamente fotogramas de compensación en contenido con baja velocidad de fotogramas para eliminar las fracturas y la trepidación de la imagen, lo que proporciona una mayor fluidez
+                    a movimientos rápidos durante retransmisiones deportivas y competiciones de motor, entre otros.
+                </p>
+            </div>
+            <div style="margin-top: -31px;" class="row_img_5">
+                <h2 class="h2_w">Android TV, una forma más sencilla de disfrutar del entretenimiento que más te gusta</h2>
+                <p class="p_w">Simplifica tu experiencia de entretenimiento con Android TV. Accede a más de 400 000 películas y programas, y descarga más de 7000 aplicaciones en un solo lugar.</p>
+            </div>
+            <div>
+                <h2>Utiliza tu voz para crear el entorno perfecto</h2>
+                <p>
+                    Se pueden realizar operaciones complejas con comandos de voz sencillos desde hasta tres metros de distancia. Pide a Google que controle tu televisor, responda a tus preguntas y consulta tu calendario. Haz que controle
+                    los dispositivos domésticos inteligentes de toda la casa.
+                </p>
+                <img src="img/body/006.jpg" alt="" />
+            </div>
+            <div>
+                <h2>Mando a distancia Bluetooth de 360° que funciona desde cualquier dirección</h2>
+                <p>La conectividad Bluetooth te permite controlar el televisor desde cualquier dirección. Disfruta de acceso fácil a Netflix y Prime Video con los botones específicos de acceso directo del mando a distancia.</p>
+                <img src="img/body/007.jpg" alt="" />
+            </div>
+            <div>
+                <h2>Decodificación Dolby Audio® y DTS-HD® para un potente sonido 3D</h2>
+                <p>Los dos altavoces estéreo de 10 W ofrecen una experiencia de audio cinematográfica rica, clara y diferenciada desde la comodidad de tu sala de estar.</p>
+                <img src="img/body/_010.jpg" alt="" />
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/MI_TV_P1_55_6971408155545.jpg" alt="" />
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="div_h" style="padding-top: 2%;">
+                            <img align="right" class="logo-mi" src="img/Logo_mi.png" alt="Logo" />
+                        </div>
+                        <img class="names" src="img/Name_P1_55.png" alt="" />
+                        <div style="align-items: center;">
+                            <div style="text-align: center;">
+                                <input class="boton_audifarma" type="button" onclick="window.location.href='https://www.falabella.com.co/falabella-co/product/32332778/Televisor-Xiaomi-55-Pulgadas-LED-4K-Ultra-HD-Smart-TV/32332778'" value="Comprar ahora" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/MI_TV_P1_43_6971408155521.jpg" alt="" />
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="div_h" style="padding-top: 2%;">
+                            <img align="right" class="logo-mi" src="img/Logo_mi.png" alt="Logo" />
+                        </div>
+                        <img class="names" src="img/Name_P1_43.png" alt="" />
+                        <div style="align-items: center;">
+                            <div style="text-align: center;">
+                                <input class="boton_audifarma" type="button" onclick="window.location.href='https://www.falabella.com.co/falabella-co/product/32332777/Televisor-Xiaomi-43-Pulgadas-LED-4K-Ultra-HD-Smart-TV/32332777'" value="Comprar ahora" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/MI_TV_P1_32_6971408155507.jpg" alt="" />
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="div_h" style="padding-top: 2%;">
+                            <img align="right" class="logo-mi" src="img/Logo_mi.png" alt="Logo" />
+                        </div>
+                        <img class="names" src="img/Name_P1_32.png" alt="" />
+                        <div style="align-items: center;">
+                            <div style="text-align: center;">
+                                <input class="boton_audifarma" type="button" onclick="window.location.href='https://www.falabella.com.co/falabella-co/product/32332776/Televisor-Xiaomi-32-Pulgadas-LED-HD-Smart-TV/32332776'" value="Comprar ahora" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
